@@ -17,8 +17,14 @@
     "README.md"
   ],
   "dependencies": {
-    "react": "16.3.2",
-    "react-native": "0.55.4",
-    "react-360": "1.1.0"
-  }
+    "react": "16.5.0",
+    "react-native": "0.64.0",
+    "react-360": "1.1.0",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
